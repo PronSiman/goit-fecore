@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper {
+  margin: 0 auto;
+  min-width: 1200px;
+  max-width: 1600px;
+  width: 100%;
+  border: 1px solid black;
+  padding: 60px 0;
+}
+
+header {
+  margin-bottom: 100px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.menu-list {
+  text-align: center;
+}
+
+.menu-item {
+  display: inline-block;
+  margin-right: 10%;
+}
+
+.menu-item:last-child {
+  margin-right: 0;
+}
+
+.menu-top {
+  text-transform: uppercase;
+  font-family: 'Playfair Display', serif;
+  color: #626262;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.menu-top:hover {
+  color: #03a9f4;
+}
+
+.news {
+  padding: 0 12.5% 0 12.5%;
+}
+
+.news-list {
+  text-align: center;
+}
+
+.news-item {
+  display: inline-block;
+  width: 420px;
+  margin-right: 50px;
+  margin-bottom: 134px;
+}
+
+.news-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.news-item:nth-last-child(-n+2) {
+  margin-bottom: 54px;
+}
+
+.news-img {
+  width: 420px;
+  height: 280px;
+  background: url(/img/1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 30px;
+}
+
+.news-item:nth-child(2) .news-img {
+  background: url(/img/2.jpg);
+}
+
+.news-item:nth-child(3) .news-img {
+  background: url(/img/3.jpg);
+}
+
+.news-item:nth-child(4) .news-img {
+  background: url(/img/4.jpg);
+}
+
+.lable-name {
+  text-transform: uppercase;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 14px;
+  line-height: 15px;
+  color: #b4ad9e;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.article-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  line-height: 36px;
+  color: #626262;
+  text-align: left;
+  margin-bottom: 42px;
+}
+
+.article {
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #626262;
+  text-align: left;
+}
+
+.load-more-btn {
+  display: block;
+  margin: 0 auto;
+  background: transparent;
+  border: 2px solid #626262;
+  height: 60px;
+  width: 13%;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: #626262;
+}
+/*# sourceMappingURL=style.css.map */
