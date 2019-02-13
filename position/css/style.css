@@ -1,0 +1,532 @@
+/*
+	HTML5 Reset :: style.css
+	----------------------------------------------------------
+	We have learned much from/been inspired by/taken code where offered from:
+
+	Eric Meyer					:: http://meyerweb.com
+	HTML5 Doctor				:: http://html5doctor.com
+	and the HTML5 Boilerplate	:: http://html5boilerplate.com
+
+-------------------------------------------------------------------------------*/
+/* Let's default this puppy out
+-------------------------------------------------------------------------------*/
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+article, aside, figure, footer, header, nav, section, details, summary {
+  display: block;
+}
+
+/* Handle box-sizing while better addressing child elements:
+   http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+/* consider resetting the default cursor: https://gist.github.com/murtaugh/5247154 */
+/* Responsive images and other embedded objects
+*/
+img,
+object,
+embed {
+  max-width: 100%;
+}
+
+/*
+   Note: keeping IMG here will cause problems if you're using foreground images as sprites.
+	 In fact, it *will* cause problems with Google Maps' controls at small size.
+	If this is the case for you, try uncommenting the following:
+
+#map img {
+		max-width: none;
+}
+*/
+/* force a vertical scrollbar to prevent a jumpy page */
+html {
+  overflow-y: scroll;
+}
+
+/* we use a lot of ULs that aren't bulleted.
+	don't forget to restore the bullets within content. */
+ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help;
+}
+
+/* tables still need cellspacing="0" in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th {
+  font-weight: bold;
+  vertical-align: bottom;
+}
+
+td {
+  font-weight: normal;
+  vertical-align: top;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+pre {
+  white-space: pre;
+  /* CSS2 */
+  white-space: pre-wrap;
+  /* CSS 2.1 */
+  white-space: pre-line;
+  /* CSS 3 (and 2.1 as well, actually) */
+  word-wrap: break-word;
+  /* IE */
+}
+
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+
+input[type="checkbox"] {
+  vertical-align: bottom;
+}
+
+.ie7 input[type="checkbox"] {
+  vertical-align: baseline;
+}
+
+.ie6 input {
+  vertical-align: text-bottom;
+}
+
+select, input, textarea {
+  font: 99% sans-serif;
+}
+
+table {
+  font-size: inherit;
+  font: 100%;
+}
+
+small {
+  font-size: 85%;
+}
+
+strong {
+  font-weight: bold;
+}
+
+td, td img {
+  vertical-align: top;
+}
+
+/* Make sure sup and sub don't mess with your line-heights http://gist.github.com/413930 */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* standardize any monospaced elements */
+pre, code, kbd, samp {
+  font-family: monospace, sans-serif;
+}
+
+/* hand cursor on clickable elements */
+.clickable,
+label,
+input[type=button],
+input[type=submit],
+input[type=file],
+button {
+  cursor: pointer;
+}
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button, input, select, textarea {
+  margin: 0;
+}
+
+/* make buttons play nice in IE */
+button,
+input[type=button] {
+  width: auto;
+  overflow: visible;
+}
+
+/* scale images in IE7 more attractively */
+.ie7 img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/* prevent BG image flicker upon hover
+   (commented out as usage is rare, and the filter syntax messes with some pre-processors)
+.ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+*/
+/* let's clear some floats */
+.clearfix:before, .clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 0px;
+}
+
+.wrapper {
+  width: 1600px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+.colomn {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 35px 40px 15px 40px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.logo-title {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.logo-title::first-letter {
+  color: #1abc9c;
+  font-weight: 700;
+}
+
+.nav-list {
+  float: right;
+  margin-top: 8px;
+}
+
+.nav-item {
+  float: left;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.nav-item-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.nav-item-link:hover {
+  color: #1abc9c;
+}
+
+.main-slider {
+  margin-bottom: 80px;
+}
+
+.slider-box {
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+
+.slider-img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.slider-inside {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 600px;
+  padding: 0 30px;
+}
+
+.slider-inside-text {
+  position: absolute;
+  left: 42%;
+  top: 44%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.slider-titel,
+.slider-text {
+  margin-bottom: 35px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.slider-text {
+  margin-bottom: 0;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  width: 95px;
+  height: 110px;
+  background-color: #1abc9c;
+  border: 0;
+  outline: 0;
+}
+
+.slider-btn:hover {
+  border: 2px dotted #fff;
+}
+
+.slider-btn:before {
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  width: 30px;
+  height: 30px;
+  border: 3px solid #fff;
+  border-right: 0;
+  border-top: 0;
+}
+
+.btn-next {
+  right: 30px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.new-collection {
+  padding: 20px 30px;
+}
+
+.new-collection-title {
+  text-align: center;
+  margin-bottom: 120px;
+  text-transform: uppercase;
+  font-size: 48px;
+  color: #515151;
+  font-weight: 700;
+}
+
+.new-collection-title::after {
+  position: relative;
+  top: 35px;
+  display: block;
+  content: '';
+  width: 160px;
+  height: 8px;
+  margin: 0 auto;
+  background-color: #1abc9c;
+}
+
+.products-list {
+  margin-bottom: 80px;
+}
+
+.products-item {
+  float: left;
+  position: relative;
+  width: 255px;
+  height: 325px;
+}
+
+.products-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.products-item:hover .overlay {
+  opacity: 0.7;
+}
+
+.product-item-img {
+  width: 100%;
+  height: 285px;
+}
+
+.porduct-name,
+.product-price {
+  display: inline-block;
+  padding: 10px 0 0 15px;
+  height: 40px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.porduct-name {
+  width: 200px;
+  background-color: #323232;
+}
+
+.product-price {
+  width: 55px;
+  padding-left: 10px;
+  background-color: #8c8c8c;
+}
+
+.product-price::before {
+  content: '\0024';
+}
+
+.overlay {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 235px;
+  height: 265px;
+  background-color: #737373;
+  opacity: 0;
+}
+
+.inside-overlay {
+  position: absolute;
+  width: 170px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.icons-list {
+  margin-bottom: 10px;
+}
+
+.icon-item {
+  float: left;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #fff;
+}
+
+.icon-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.icon-item:hover {
+  background-color: #1abc9c;
+  cursor: pointer;
+}
+
+.hart-icon {
+  background: url(../img/icons-img/hart.png) center no-repeat;
+}
+
+.arrow-icon {
+  background: url(../img/icons-img/arrow.png) center no-repeat;
+}
+
+.clock-icon {
+  background: url(../img/icons-img/clock.png) center no-repeat;
+}
+
+.add-card-btn {
+  width: 170px;
+  height: 50px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #323232;
+  border: 1px solid #fff;
+  outline: 0;
+}
+
+.add-card-btn:hover {
+  background-color: #8c8c8c;
+}
+
+.clearfix::after {
+  display: table;
+  content: '';
+  clear: both;
+}
+/*# sourceMappingURL=style.css.map */

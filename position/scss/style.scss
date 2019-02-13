@@ -1,0 +1,274 @@
+@import 'reset';
+@import'rem';
+body {
+    min-height: 100vh;
+    font-size: 0px;
+}
+
+.wrapper {
+    width: 1600px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.colomn {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 35px 40px 15px 40px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    display: inline-block;
+}
+
+.logo-title {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 600;
+    &::first-letter {
+        color: #1abc9c;
+        font-weight: 700;
+    }
+}
+
+.nav-list {
+    float: right;
+    margin-top: 8px;
+}
+
+.nav-item {
+    float: left;
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.nav-item-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 14px;
+    font-weight: 900;
+    &:hover {
+        color: #1abc9c;
+    }
+}
+
+.main-slider {
+    margin-bottom: 80px;
+}
+
+.slider-box {
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+
+.slider-img {
+    // width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-inside {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    padding: 0 30px;
+}
+
+.slider-inside-text {
+    position: absolute;
+    left: 42%;
+    top: 44%;
+    transform: translate(-50%, -50%);
+}
+
+.slider-titel,
+.slider-text {
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.slider-text {
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    width: 95px;
+    height: 110px;
+    background-color: #1abc9c;
+    border: 0;
+    outline: 0;
+    &:hover {
+        border: 2px dotted #fff;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        transform: rotate(45deg);
+        width: 30px;
+        height: 30px;
+        border: 3px solid #fff;
+        border-right: 0;
+        border-top: 0;
+    }
+}
+
+.btn-next {
+    right: 30px;
+    transform: rotate(180deg)
+}
+
+.new-collection {
+    padding: 20px 30px;
+}
+
+.new-collection-title {
+    text-align: center;
+    margin-bottom: 120px;
+    text-transform: uppercase;
+    font-size: 48px;
+    color: #515151;
+    font-weight: 700;
+    &::after {
+        position: relative;
+        top: 35px;
+        display: block;
+        content: '';
+        width: 160px;
+        height: 8px;
+        margin: 0 auto;
+        background-color: #1abc9c;
+    }
+}
+
+.products-list {
+    margin-bottom: 80px;
+}
+
+.products-item {
+    float: left;
+    position: relative;
+    width: 255px;
+    height: 325px;
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+    &:hover .overlay {
+        opacity: 0.7;
+    }
+}
+
+.product-item-img {
+    width: 100%;
+    height: 285px;
+}
+
+.porduct-name,
+.product-price {
+    display: inline-block;
+    padding: 10px 0 0 15px;
+    height: 40px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.porduct-name {
+    width: 200px;
+    background-color: #323232;
+}
+
+.product-price {
+    width: 55px;
+    padding-left: 10px;
+    background-color: #8c8c8c;
+    &::before {
+        content: '\0024';
+    }
+}
+
+.overlay {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 235px;
+    height: 265px;
+    background-color: #737373;
+    opacity: 0;
+}
+
+.inside-overlay {
+    position: absolute;
+    width: 170px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.icons-list {
+    margin-bottom: 10px;
+}
+
+.icon-item {
+    float: left;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fff;
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+    &:hover {
+        background-color: #1abc9c;
+        cursor: pointer;
+    }
+}
+
+.hart-icon {
+    background: url(../img/icons-img/hart.png) center no-repeat;
+}
+
+.arrow-icon {
+    background: url(../img/icons-img/arrow.png) center no-repeat;
+}
+
+.clock-icon {
+    background: url(../img/icons-img/clock.png) center no-repeat;
+}
+
+.add-card-btn {
+    width: 170px;
+    height: 50px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #323232;
+    border: 1px solid #fff;
+    outline: 0;
+    &:hover {
+        background-color: #8c8c8c;
+    }
+}
+
+.clearfix::after {
+    display: table;
+    content: '';
+    clear: both;
+}
