@@ -10,6 +10,18 @@
   }
 }
 
+@media (min-width: 320px) and (max-width: 995px) {
+  .header-descr {
+    padding: 0 25px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 995px) {
+  .members-list {
+    padding: 0 110px;
+  }
+}
+
 @media (min-width: 768px) {
   .header {
     padding: 40px 0 140px 0;
@@ -65,7 +77,6 @@
             justify-content: space-between;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding: 0 110px;
     margin-bottom: 40px;
   }
   .members-item {
@@ -76,6 +87,25 @@
   }
   .see-more-btn {
     padding: 15px 50px;
+  }
+}
+
+@media (min-width: 996px) {
+  .conteiner {
+    width: 996px;
+    padding: 0 28px;
+  }
+  .header-slogan {
+    margin-bottom: 35px;
+  }
+  .header-descr {
+    margin-bottom: 35px;
+  }
+  .main {
+    padding: 70px 15px;
+  }
+  .main-descr {
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=media.css.map */

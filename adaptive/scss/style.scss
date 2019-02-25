@@ -4,6 +4,7 @@
 .main-wrapper {
     margin: 0 auto;
     font-family: 'Montserrat';
+    line-height: 1;
 }
 
 .header {
@@ -57,9 +58,6 @@ button {
     border-bottom-left-radius: 20px;
 }
 
-// .entry-buttons {
-//     margin-bottom: 120px;
-// }
 .header-slogan {
     margin-bottom: 20px;
     font-size: 30px;
@@ -67,7 +65,6 @@ button {
 }
 
 .header-descr {
-    padding: 0 25px;
     margin-bottom: 20px;
     font-size: 18px;
 }
@@ -159,11 +156,6 @@ button {
     }
 }
 
-.member-img {
-    // display: block;
-    // margin: 0 auto;
-}
-
 .members-name,
 .members-about {
     font-size: 14px;
@@ -171,6 +163,7 @@ button {
 
 .members-name {
     margin-bottom: 20px;
+    font-weight: 700;
 }
 
 .members-about {

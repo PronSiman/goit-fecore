@@ -275,6 +275,7 @@ input[type=button] {
 .main-wrapper {
   margin: 0 auto;
   font-family: 'Montserrat';
+  line-height: 1;
 }
 
 .header {
@@ -335,7 +336,6 @@ button {
 }
 
 .header-descr {
-  padding: 0 25px;
   margin-bottom: 20px;
   font-size: 18px;
 }
@@ -427,6 +427,7 @@ button {
 
 .members-name {
   margin-bottom: 20px;
+  font-weight: 700;
 }
 
 .members-about {
