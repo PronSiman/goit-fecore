@@ -18,6 +18,7 @@
 }
 
 .conteiner {
+    margin: 0 auto;
     width: 320px;
     padding: 0px 10px;
 }
@@ -33,7 +34,6 @@
 
 .header-logo {
     font-size: 20px;
-    margin-bottom: 40px;
 }
 
 button {
@@ -57,10 +57,9 @@ button {
     border-bottom-left-radius: 20px;
 }
 
-.entry-buttons {
-    margin-bottom: 120px;
-}
-
+// .entry-buttons {
+//     margin-bottom: 120px;
+// }
 .header-slogan {
     margin-bottom: 20px;
     font-size: 30px;
@@ -73,7 +72,7 @@ button {
     font-size: 18px;
 }
 
-.find-button {
+.pink-btn {
     padding: 15px 60px;
     background-color: #ff4e50;
     border: 1px solid #ff4e50;
@@ -81,4 +80,99 @@ button {
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
+    font-weight: 700;
+}
+
+.main {
+    padding: 70px 40px 60px 40px;
+    width: 320px;
+    text-align: center;
+}
+
+.main-descr {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.members-list {
+    margin-bottom: 20px;
+}
+
+.members-item {
+    padding: 10px 0px;
+}
+
+.member-item-img {
+    position: relative;
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 25px;
+    &:before,
+    &:after {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: block;
+        content: '';
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #fff;
+    }
+    &:after {
+        position: absolute;
+        bottom: 3px;
+        right: 3px;
+        width: 34px;
+        height: 34px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.members-item:nth-child(1) .member-item-img {
+    &:after {
+        background-color: #ff4e50;
+        background-image: url(../img/icons-png/tv.png);
+    }
+}
+
+.members-item:nth-child(2) .member-item-img {
+    &:after {
+        background-color: #ffa507;
+        background-image: url(../img/icons-png/chemical.png);
+    }
+}
+
+.members-item:nth-child(3) .member-item-img {
+    &:after {
+        background-color: #1cd7ad;
+        background-image: url(../img/icons-png/coffe.png);
+    }
+}
+
+.members-item:nth-child(4) .member-item-img {
+    &:after {
+        background-color: #4e73db;
+        background-image: url(../img/icons-png/telegram-logo.png);
+    }
+}
+
+.member-img {
+    // display: block;
+    // margin: 0 auto;
+}
+
+.members-name,
+.members-about {
+    font-size: 14px;
+}
+
+.members-name {
+    margin-bottom: 20px;
+}
+
+.members-about {
+    color: #666666;
 }
